@@ -144,6 +144,7 @@ div.container-loja-flex{
     padding: 20px;
 }
 div.div-loja{
+    box-sizing: border-box;
     width: 136px;
     display: inline-block;
     flex-direction: column;
