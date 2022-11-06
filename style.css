@@ -72,14 +72,17 @@ body{
     box-sizing: border-box;
     text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.349);
     color: white;
-    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.548), black);
+    background: rgba(4, 4, 4, 0.896);
     background-attachment: fixed;
 } 
 .important {
     color: var(--cor1);
 }
 main{
-    padding: 0px 15px;
+    border-radius: 25px;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.134);
+    background-color: rgb(34, 34, 34);
+    padding: 75px 50px 0px 50px;
     margin: auto;
     line-height: 2.2em;
     text-align: justify;
@@ -157,7 +160,8 @@ div.div-loja:hover{
     border-radius: 2%;
     background-size: 315%;
     transition: 0.4s;
-    border: 10px rgba(0, 0, 0, 0.418) solid;
+    border: 2px solid rgba(255, 255, 255, 0.411);
+    transform: translate(-5px, -5px);
 }
 div#pichau{
     background-image: linear-gradient(220deg, #000000, #DF0020, #231F20);
@@ -182,3 +186,33 @@ div.container-loja-flex > a{
         background-position: 0% 50%;
     }
 } 
+
+::-webkit-scrollbar {
+    width: 18px;           
+    height: 8px;                     /*ultima camada da barra de rolagem*/
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);     /*primeira camada da barra de rolagem*/
+}
+@keyframes scrollbar {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+} 
+p.copyright{
+    font-size: larger;
+    text-align: center;
+    padding: 25px; 
+    pointer-events: none;
+}
+p.copyright > a{
+    color: white;
+    text-decoration: none;
+}
