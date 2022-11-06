@@ -1,0 +1,210 @@
+@charset "utf-8";
+:root{
+    --cor1: #76B900;
+    --cor2: #253B00;
+    --cor3: #93C63B;
+}
+
+*{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: normal;
+    margin: 0%;
+    padding: 0%;
+}
+
+.img-icon{
+    color: var(--cor1);
+    padding: 0px;
+    width: 26px;
+}
+a.cabecalink{
+    padding: 0px 0px;
+}
+header{
+    margin: 0%;
+    font-size: 2em;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+}
+.p-subtitle{
+    font-size: 0.7em;
+    padding: 10px 0px 10px 0px;
+}
+@keyframes carrossel {
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    95% { margin-left: -300%;}
+    100% {margin-left: -400%;}
+}
+section.carrossel{
+    overflow: hidden;
+    margin: auto;
+    height: 360px;
+    width: 640px;
+}
+div.galeria{
+    animation: carrossel 20s infinite;
+    width: 600%;
+}
+div.galeria > img {
+    width: 16.598%;
+    height: 360px;
+}
+body{
+    box-sizing: border-box;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.349);
+    color: white;
+    background: rgba(4, 4, 4, 0.896);
+    background-attachment: fixed;
+} 
+.important {
+    color: var(--cor1);
+}
+main{
+    border-radius: 25px;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.134);
+    background-color: rgb(34, 34, 34);
+    padding: 75px 50px 0px 50px;
+    margin: auto;
+    line-height: 2.2em;
+    text-align: justify;
+    max-width: 800px;
+    min-width: 300px;
+    font-size: 1em;
+}
+h2{
+    font-size: 1.5em;
+    padding: 40px 0px 10px 40px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    line-height: normal;
+    font-size: 0.9em;
+}
+caption{
+    font-size: 1em;
+    text-align: left;
+}
+th{
+    font-weight: 900;
+}
+tr:hover{
+    transition: 0.8s;
+    background-color: #3b3d3c8c;
+}
+th,td{
+    font-size: 1em;
+    padding: 20px 40px;
+    border: 1px solid black;
+}
+td.td-number{
+    padding-right: 20px;
+    text-align: right;
+}
+div#tabela{
+    overflow-x: auto;
+}
+img{
+    width: 100%;
+    size: 100%;
+}
+.caixa{
+    text-align: center;
+}
+section#tecnologias{
+    justify-content: center;
+}
+h2.title-side{
+    color: var(--cor1);
+padding: 10px 40px 0px 0px;
+}
+.paragrafo-space::first-letter{
+ padding-left: 4vw;
+}
+#tecnologias > h2{
+    padding: auto;
+}
+div.container-loja-flex{
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+div.div-loja{
+    box-sizing: border-box;
+    width: calc(98% / 3);
+    display: inline-block;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    animation: cores 10s ease infinite;
+}
+div.div-loja:hover{
+    border-radius: 2%;
+    background-size: 315%;
+    transition: 0.4s;
+    border: 2px solid rgba(255, 255, 255, 0.411);
+    transform: translate(-5px, -5px);
+}
+div#pichau{
+    background-image: linear-gradient(220deg, #000000, #DF0020, #231F20);
+}
+div#terabyte{
+    background-image: linear-gradient(220deg,#D98723,#F2B705,#BF532C,#BF3030);
+}
+div#kabum{
+    background-image: linear-gradient(220deg,#0F5FA6,#048ABF,#F27B13,#A63208,#F24F13);
+}
+div.container-loja-flex > a{
+    text-decoration: none;
+}
+@keyframes cores {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+} 
+
+::-webkit-scrollbar {
+    width: 18px;           
+    height: 8px;                     /*ultima camada da barra de rolagem*/
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);     /*primeira camada da barra de rolagem*/
+}
+@keyframes scrollbar {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+} 
+p.copyright{
+    font-size: larger;
+    text-align: center;
+    padding: 25px; 
+    pointer-events: none;
+}
+p.copyright > a{
+    color: white;
+    text-decoration: none;
+}
