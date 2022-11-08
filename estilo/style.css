@@ -208,3 +208,31 @@ p.copyright > a{
     color: white;
     text-decoration: none;
 }
+
+@media screen and (min-width:375px) and (max-width: 1000px) { /*Mobile phone styles*/
+    *{
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    p.p-subtitle{
+        font-size: small;
+    }
+    section.carrossel{
+        overflow: hidden;
+        margin: auto;
+        height: 260px;
+        width: 340px;
+    }
+    div.galeria{
+        animation: carrossel 20s infinite;
+        width: 600%;
+    }
+    div.galeria > img {
+        width: calc(2030px / 6);
+        height: 360px;
+    }
+}
